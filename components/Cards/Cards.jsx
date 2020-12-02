@@ -6,8 +6,8 @@ import styles from './Cards.module.css';
 import cn from 'classnames';
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
-    console.log('confirmed --->',confirmed);
     if (!confirmed) return 'Loading ...';
+    
     return (
       <div className={styles.container}>
         <Grid container spacing={3} justify="center">
